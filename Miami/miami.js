@@ -10,7 +10,7 @@ app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
 app.set("views", __dirname + '/views'); // Ensure express knows where views are
 
-const navigation = require('./data/navigation.json');
+// const navigation = require('./data/navigation.json');
 
 
 app.get('/', (request, response) => {
