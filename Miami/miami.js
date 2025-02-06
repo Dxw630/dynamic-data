@@ -1,11 +1,15 @@
 const express = require('express');
-const app = express();
+const handlebars = require ('express-handlebars');
 
-const handlebars = require('express-handlebars');
+const app = express();
+const port = process.env.port || 3000;
+const navigation = require('./data/navigation.json');
+
+//Set up handlebars
 app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
+app.set("views", __dirname + '/views'); // Ensure express knows where views are
 
-const port = process.env.port || 3000;
 const navigation = require('./data/navigation.json');
 
 
