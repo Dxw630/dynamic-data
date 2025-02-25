@@ -15,8 +15,8 @@ names.forEach( (value,index)=>{
  })
  // JavaScript Objects
 let person = {
-    firstName:"Elli", // person.firstName
-    lastName:"S",
+    firstName:"Desiree", // person.firstName
+    lastName:"W",
     occupation:"Student",
     email:"email@email.com",
     getName: ()=>{
