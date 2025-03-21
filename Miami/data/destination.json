@@ -1,0 +1,28 @@
+{
+    "locations":[
+        {
+            "page":"nightlife",
+            "name":"factory town",
+            "description":"A night in the 305 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, reiciendis quaerat deleniti tenetur earum aspernatur molestias ipsam excepturi assumenda obcaecati quidem eaque aliquid repudiandae reprehenderit soluta delectus temporibus optio officia!",
+             "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"beaches",
+            "name":"Crandon Park",
+            "description":"A night in the 305 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, reiciendis quaerat deleniti tenetur earum aspernatur molestias ipsam excepturi assumenda obcaecati quidem eaque aliquid repudiandae reprehenderit soluta delectus temporibus optio officia!",
+             "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"beaches",
+            "name":"south beach",
+            "description":"A night in the 305 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, reiciendis quaerat deleniti tenetur earum aspernatur molestias ipsam excepturi assumenda obcaecati quidem eaque aliquid repudiandae reprehenderit soluta delectus temporibus optio officia!",
+             "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"nightlife",
+            "name":"Ultra",
+            "description":"A night in the 305 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, reiciendis quaerat deleniti tenetur earum aspernatur molestias ipsam excepturi assumenda obcaecati quidem eaque aliquid repudiandae reprehenderit soluta delectus temporibus optio officia!",
+             "image":"/images/destinations/destination.jpg"
+        }
+    ]
+}

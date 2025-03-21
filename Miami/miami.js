@@ -20,8 +20,14 @@ const port = process.env.port || 8080
 let navigation = require("./data/navigation.json")
 //Import Slideshow data
 let slideshow = require('./data/slideshow.json')
+//Import Gallery data
+let gallery = require('./data/gallery.json')
+//Import page data
+let content = require('./data/pages.json')
 //Create some routes
 app.get('/', (request,response)=>{
+
+
     //Filter slideshow object to get home page only
     let slides = slideshow.slides.filter((slide)=>{
         return slide.home == true 
@@ -38,8 +44,27 @@ app.get('/page/:page',(req,res) =>{
         title:"Miami Travel Site",
         nav: navigation,
         slides: slides
+        images: gallery.images
     })
 })
+//Dyanmic routes for pages
+app.get('/page/:page',(req,res) => {
+      //Filter pages object to get page from :page req.params.page
+    let page = content.pages.filter((item)=>{
+        return item.page == req.params.page 
+})
+//page is an array with just 1 item. we access the position 0 to get the object alone
+console.log(page[0])
+
+//Filter slideshow object to get home page only
+let slides = slideshow.slides.filter((slide)=>{
+    return slide.page == req.params.page
+    
+    //Filter slideshow object to get home page only
+let dest = destinations.locations.filter((loc)=>{
+    return slide.page == req.params.page
+
+
 app.get('/beaches', (request,response)=>{
     response.type("text/html")
     response.render("page", {title :"Miami Beaches",nav:navigation})
